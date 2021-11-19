@@ -1,0 +1,36 @@
+{
+  "templateVersion": 8,
+  "features": [
+    {
+      "name": "Wisdom",
+      "streamId": "bugval",
+      "templateType": "HBS",
+      "entityPageSet": {
+        "htmlTemplate": "wisdom.hbs",
+        "urlTemplate": "wisdom_url.hbs"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "$id": "bugval",
+      "source": "knowledgeGraph",
+      "destination": "pages",
+      "fields": [
+        "name",
+        "c_wisdom",
+        "c_isHuman",
+        "meta"
+      ],
+      "filter": {
+        "entityTypes": [
+          "ce_wisdom"
+        ]
+      },
+      "localization": {
+        "locales": ["en"],
+        "primary": false
+      }
+    }
+  ]
+}
