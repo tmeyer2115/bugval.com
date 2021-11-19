@@ -1,13 +1,12 @@
 {
-  "templateVersion": 8,
   "features": [
     {
       "name": "Wisdom",
       "streamId": "bugval",
       "templateType": "HBS",
       "entityPageSet": {
-        "htmlTemplate": "wisdom.hbs",
-        "urlTemplate": "wisdom_url.hbs"
+        "htmlTemplate": "wisdom",
+        "urlTemplate": "wisdom_url"
       }
     }
   ],
